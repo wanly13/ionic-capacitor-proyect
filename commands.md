@@ -7,10 +7,11 @@ Generar el proyecto en versión web, me devuelve por defecto el archivo www.
 `ionic build `  
 
 Instalamos Capacitor  
-`npm install @capacitor/android`
+`npm install @capacitor/android @capacitor/ios `
 
 Convertir el codigo a un proyecto de android, convierte todo el proyecto www a un proyecto de android.  
-`npx cap add android`  
+`npx cap add android`   
+`npx cap add ios`  
 
 El proyecto ya esta creado asi que nos centramos en buildearlo  
 `npx cap open android`
