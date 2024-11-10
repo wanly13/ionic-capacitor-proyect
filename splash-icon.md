@@ -47,11 +47,14 @@ Los iconos de 1024x1024px y los splash almenos 2732x2732px
 ``` 
 assets/
 ├── icon-only.png
-├── icon-foreground.png
+├── icon-foreground.png // Es el que cuenta mas creo
 ├── icon-background.png
 ├── splash.png
 └── splash-dark.png  
 
 ```  
 # Generamos el splash en diferentes resoluciones  
-`npx capacitor-assets generate`  
+`npx capacitor-assets generate`   
+
+# Para el caso de Android 12 funciona de otra manera  
+

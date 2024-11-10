@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.pueblitos.info',
-  appName: 'pueblitos-dev',
+  appName: 'app.mispueblitos.dev',
   webDir: 'www',
   plugins: {
     SplashScreen: {

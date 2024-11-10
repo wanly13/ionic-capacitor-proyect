@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.pueblitos.info;
 
 import com.getcapacitor.BridgeActivity;
 
