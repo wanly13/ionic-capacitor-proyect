@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { HomeModulesComponent } from './pages/modules/home/views/home-modules/home-modules.component';
+import { SolicitudHttpsListComponent } from './pages/modules/solicitud-https/views/solicitud-https.list/solicitud-https.list.component';
+
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    component: HomeModulesComponent
+  },
+  {
+    path: 'home/solicitudes-https',
+    component: SolicitudHttpsListComponent
   },
   {
     path: 'message/:id',

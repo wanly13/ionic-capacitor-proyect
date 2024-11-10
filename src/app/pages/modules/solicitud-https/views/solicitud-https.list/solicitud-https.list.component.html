@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Listado Solicitudes Http-Https" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  @for (item of respuestahttps; track $index) {
+    <div class="ion-padding">
+      <label>{{item.nombre}}</label>
+      <p>
+        {{item.ubicacionExacta}}
+      </p>
+    </div>
+  }
+ 
+</ion-content>

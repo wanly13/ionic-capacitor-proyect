@@ -16,3 +16,5 @@ Convertir el codigo a un proyecto de android, convierte todo el proyecto www a u
 El proyecto ya esta creado asi que nos centramos en buildearlo  
 `npx cap open android`
 
+Cuando el andorid ya esta creado solo usar este comando  
+`ionic capacitor build android --prod --release`  

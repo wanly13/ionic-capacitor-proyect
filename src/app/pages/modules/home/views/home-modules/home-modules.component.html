@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Opciones Turísticas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Opciones Turísticas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-list>
+    <ion-item button detail="true" *ngFor="let opcion of opcionesTuristicas" (click)="seleccionarOpcion(opcion)">
+      <ion-icon [name]="opcion.icono" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h2>{{ opcion.nombre }}</h2>
+        <p>{{ opcion.descripcion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
